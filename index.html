@@ -158,20 +158,19 @@
 
     var mySwiper = new Swiper('.swiper-container', {
         direction: 'vertical',
-        height: window.innerHeight,
+        //height:window.innerHeight,
+        height:window.screen.availHeight,
 
-
-        onInit: function (swiper) { //Swiper2.x的初始化是onFirstInit
+    onInit: function (swiper) { //Swiper2.x的初始化是onFirstInit
             swiperAnimateCache(swiper); //隐藏动画元素
             swiperAnimate(swiper); //初始化完成开始动画
         },
         onSlideChangeEnd: function (swiper) {
             swiperAnimate(swiper); //每个slide切换结束时也运行当前slide动画
         }
-    })
+    });
     var swiperContainer = document.getElementsByClassName('swiper-container')[0];
     var swiperSlide=document.getElementsByClassName('swiper-slide')[0];
-    swiperContainer.style.height = swiperSlide.height
-
+console.dir(swiperContainer);
 
 </script>
