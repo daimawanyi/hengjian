@@ -132,6 +132,9 @@
             margin-top: 11.35rem;
             margin-left: 1.27rem;
         }
+        .swiper-container,.swiper-wrapper,.swiper-slide{
+            height: 100%;
+        }
     </style>
 </head>
 <body>
@@ -171,7 +174,6 @@
 
     var mySwiper = new Swiper('.swiper-container', {
         direction: 'vertical',
-        height:window.screen.availHeight,
 
         onInit: function (swiper) { //Swiper2.x的初始化是onFirstInit
             swiperAnimateCache(swiper); //隐藏动画元素
