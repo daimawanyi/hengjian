@@ -180,10 +180,6 @@
     var mySwiper = new Swiper('.swiper-container', {
         direction: 'vertical',
         autoHeight:true,
-        onSlideChangeStart : function() {
-            var swiperWrapper=document.getElementsByClassName('swiper-wrapper')[0];
-            swiperWrapper.style.height=auto;
-        },
         onInit: function (swiper) { //Swiper2.x的初始化是onFirstInit
             swiperAnimateCache(swiper); //隐藏动画元素
             swiperAnimate(swiper); //初始化完成开始动画
@@ -192,7 +188,7 @@
             swiperAnimate(swiper); //每个slide切换结束时也运行当前slide动画
         }
     });
-    var swiperSlide=document.getElementsByClassName('swiper-slide')[0];
+    mySwiper.slides[0].style.height=100+'%'
     //swiperSlide.style.height=13.34+'rem';
 
 </script>
