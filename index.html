@@ -190,13 +190,7 @@
     });
 
     var input=document.getElementById('input-text-box');
-    input.onclick=function (){
-        var target = this;
-             // 使用定时器是为了让输入框上滑时更加自然
-              setTimeout(function(){
-                    target.scrollIntoView(true);
-                  },100);
-    }
+    
     input.onblur=function (){
         var part6=document.getElementById('part6');
         part6.scrollIntoView(true);
