@@ -74,7 +74,8 @@
         #part4 {
             background: url("img/bg4.png") no-repeat 0/ 100%;
         }
-        #part4 a{
+
+        #part4 a {
             background: url("img/a.png") no-repeat 0/100%;
             width: 4.98rem;
             height: .95rem;
@@ -82,6 +83,7 @@
             top: 6.72rem;
             left: 1.27rem;
         }
+
         #part5 {
             background: url("img/bg5.png") no-repeat 0/ 100%;
         }
@@ -154,7 +156,9 @@
     var winW = document.documentElement.clientWidth;
     document.documentElement.style.fontSize = winW / desW * 100 + "px";
 
-
+    var swiperContainer = document.getElementsByClassName('swiper-container')[0];
+    var swiperSlide=document.getElementsByClassName('swiper-slide')[0];
+    swiperContainer.style.height = swiperSlide.height
     var mySwiper = new Swiper('.swiper-container', {
         direction: 'vertical',
         height: window.innerHeight,
