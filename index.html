@@ -91,7 +91,7 @@
             width: 4.98rem;
             height: .95rem;
             position: absolute;
-            top: 6.20rem;
+            top: 6rem;
             left: 1.27rem;
         }
 
@@ -125,6 +125,9 @@
             color: white;
             font-size: .24rem;
             line-height: .24rem;
+            user-modify: read-write-plaintext-only;;
+
+            -webkit-user-modify: read-write-plaintext-only;
         }
 
         #part6 input:nth-of-type(2) {
@@ -186,6 +189,13 @@
         }
     });
 
-
+    var input=document.getElementById('input-text-box');
+    input.onclick=function (){
+        var target = this;
+             // 使用定时器是为了让输入框上滑时更加自然
+              setTimeout(function(){
+                    target.scrollIntoView(true);
+                  },100);
+    }
 </script>
 </html>
