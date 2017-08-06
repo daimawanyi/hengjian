@@ -89,7 +89,7 @@
         #part4 {
             background: url("img/bg4.png") no-repeat 0/ 100% 100%;
             position: relative;
-            height:12.14rem ;
+            height:12.07rem ;
         }
 
         #part4 a {
@@ -97,8 +97,8 @@
             width: 4.98rem;
             height: .95rem;
             position: absolute;
-            margin-top: 6.46rem;
-            margin-left: 1.27rem;
+            top: 6.46rem;
+            left: 1.27rem;
         }
 
         #part5 {
@@ -129,6 +129,8 @@
             margin-top: 8.62rem;
             margin-left: .55rem;
             color: white;
+            font-size: .24rem;
+            line-height: .24rem;
         }
 
         #part6 input:nth-of-type(2) {
@@ -164,7 +166,7 @@
             <div class="swiper-slide" id="part5"></div>
             <div class="swiper-slide" id="part6">
                 <div class="ani" swiper-animate-effect="fadeIn"></div>
-                <input type="tel"/>
+                <input type="tel" placeholder="电话(方便老师联系您获取押题)"/>
                 <input type="submit" value=""/>
             </div>
         </div>
@@ -181,6 +183,7 @@
     var mySwiper = new Swiper('.swiper-container', {
         direction: 'vertical',
         height:window.innerHeight,
+        resistanceRatio : 0,
         onInit: function (swiper) {
             swiperAnimateCache(swiper);
             swiperAnimate(swiper);
