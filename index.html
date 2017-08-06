@@ -17,7 +17,7 @@
             width: 100%;
 
         }
-        .swiper-container,.swiper-wrapper,.swiper-slide{
+        .div1{
             height:13.34rem ;
         }
         html,body{
@@ -144,28 +144,30 @@
     </style>
 </head>
 <body>
-<div class="swiper-container">
-    <div class="swiper-wrapper">
-        <div class="swiper-slide" id="part1">
-            <div></div>
-            <div class="ani" swiper-animate-effect="slideInRight"></div>
-            <a href="#"></a>
-        </div>
-        <div class="swiper-slide" id="part2">
-            <div class="ani" swiper-animate-effect="fadeIn"></div>
-            <a href="#"></a>
-        </div>
-        <div class="swiper-slide" id="part3">
-            <div class="ani" swiper-animate-effect="slideInRight"></div>
-        </div>
-        <div class="swiper-slide" id="part4">
-            <a href="#"></a>
-        </div>
-        <div class="swiper-slide" id="part5"></div>
-        <div class="swiper-slide" id="part6">
-            <div class="ani" swiper-animate-effect="fadeIn"></div>
-            <input type="tel"/>
-            <input type="submit" value=""/>
+<div class="div1">
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" id="part1">
+                <div></div>
+                <div class="ani" swiper-animate-effect="slideInRight"></div>
+                <a href="#"></a>
+            </div>
+            <div class="swiper-slide" id="part2">
+                <div class="ani" swiper-animate-effect="fadeIn"></div>
+                <a href="#"></a>
+            </div>
+            <div class="swiper-slide" id="part3">
+                <div class="ani" swiper-animate-effect="slideInRight"></div>
+            </div>
+            <div class="swiper-slide" id="part4">
+                <a href="#"></a>
+            </div>
+            <div class="swiper-slide" id="part5"></div>
+            <div class="swiper-slide" id="part6">
+                <div class="ani" swiper-animate-effect="fadeIn"></div>
+                <input type="tel"/>
+                <input type="submit" value=""/>
+            </div>
         </div>
     </div>
 </div>
@@ -188,10 +190,9 @@
             swiperAnimate(swiper); //每个slide切换结束时也运行当前slide动画
         }
     });
-    mySwiper.container[0].style.height=100+'%';
-    mySwiper.wrapper[0].style.height=100+'%';
-    mySwiper.slides[0].style.height=100+'%';
-    //swiperSlide.style.height=13.34+'rem';
+    mySwiper.container[0].style.height=13.34+'rem';
+    mySwiper.wrapper[0].style.height=13.34+'rem';
+    mySwiper.slides[0].style.height=13.34+'rem';
 
 </script>
 </html>
