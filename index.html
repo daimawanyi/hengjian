@@ -156,9 +156,6 @@
     var winW = document.documentElement.clientWidth;
     document.documentElement.style.fontSize = winW / desW * 100 + "px";
 
-    var swiperContainer = document.getElementsByClassName('swiper-container')[0];
-    var swiperSlide=document.getElementsByClassName('swiper-slide')[0];
-    swiperContainer.style.height = swiperSlide.height
     var mySwiper = new Swiper('.swiper-container', {
         direction: 'vertical',
         height: window.innerHeight,
@@ -172,6 +169,9 @@
             swiperAnimate(swiper); //每个slide切换结束时也运行当前slide动画
         }
     })
+    var swiperContainer = document.getElementsByClassName('swiper-container')[0];
+    var swiperSlide=document.getElementsByClassName('swiper-slide')[0];
+    swiperContainer.style.height = swiperSlide.height
 
 
 </script>
