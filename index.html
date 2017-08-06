@@ -97,7 +97,7 @@
             width: 4.98rem;
             height: .95rem;
             position: absolute;
-            top: 6.46rem;
+            top: 6.20rem;
             left: 1.27rem;
         }
 
@@ -166,7 +166,7 @@
             <div class="swiper-slide" id="part5"></div>
             <div class="swiper-slide" id="part6">
                 <div class="ani" swiper-animate-effect="fadeIn"></div>
-                <input type="tel" placeholder="电话(方便老师联系您获取押题)"/>
+                <input type="tel" placeholder="电话(方便老师联系您获取押题)" id="input-text-box"/>
                 <input type="submit" value=""/>
             </div>
         </div>
@@ -183,7 +183,6 @@
     var mySwiper = new Swiper('.swiper-container', {
         direction: 'vertical',
         height:window.innerHeight,
-        resistanceRatio : 0,
         onInit: function (swiper) {
             swiperAnimateCache(swiper);
             swiperAnimate(swiper);
@@ -192,9 +191,10 @@
             swiperAnimate(swiper);
         }
     });
-    /*mySwiper.container[0].style.height=13.34+'rem';
-    mySwiper.wrapper[0].style.height=13.34+'rem';
-    mySwiper.slides[0].style.height=13.34+'rem';*/
+    var inputTextBox = document.getElementById('input-text-box');
+    setInterval(function(){
+        inputTextBox.scrollIntoView(false);
+    },200)
 
 </script>
 </html>
